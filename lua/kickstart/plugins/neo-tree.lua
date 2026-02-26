@@ -16,8 +16,19 @@ return {
   opts = {
     filesystem = {
       window = {
+        position = 'float',
+        popup = {
+          size = {
+            height = '80%',
+            width = '80%',
+          },
+          position = '50%', -- center of screen
+          border = 'rounded', -- "single", "double", "rounded", "shadow"
+        },
         mappings = {
           ['\\'] = 'close_window',
+          ['t'] = 'move_down',
+          ['n'] = 'move_up',
         },
       },
     },
